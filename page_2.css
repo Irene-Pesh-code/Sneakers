@@ -21,7 +21,12 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+.main {
+    width: 1440px;
+    height: 1764px;
+    padding: 0px, 150px, 0px, 150px;
+    gap: 48px;
+}
 .header {
     width: 1440px;
     height: 112px;
@@ -35,6 +40,7 @@ body {
     width: 1140px;
     height: 100%;
     margin-left: 140px;
+    text-decoration: none;
 }
 .logo-image {
     width: 215px;
@@ -72,80 +78,61 @@ body {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-}
-.h1 {
-    height: 48px;
-    width: 1161px;
-    font-family: "Anonymous Pro Bold", "Anonymous Pro";
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 48px;
-}
-.sneakers-cards {
-    font-family: "Anonymous Pro";
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 1161px;
-    background-color: #f1f1f1;
-    flex: 1 0 auto;
-    padding: 32px 0px 32px 0px;
-}
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    align-items: start;
-
-    gap: 24px;
-}
-.sneakers {
-    display: flex;
     flex-direction: column;
+}
+.card {
+    background-color: white/200;
+    display: flex;
     align-items: center;
-    justify-content: center;
-    width: 371px;
-    border-radius: 12px;
-    overflow: hidden;
+    width: 1140px;
+    padding: 32px, 0px, 32px, 0px;
+    gap: 48px;
+    border-radius: 50px;
+    padding: 48px;
 }
-.image-card {
-    width: 100%;
-    height: 100%;
-    max-height: 370px;
-    object-fit: cover;
-    object-position: center;
-}
-.card-text {
-    font-family: "Anonymous Pro Regular", "Anonymous Pro";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    margin: 0;
+.card-img {
+    width: 1044px;
+    height: 600px;
+    border-radius: 50px, 50px, 0px, 0px;
 }
 .card-title {
-    font-family: "Anonymous Pro Bold", "Anonymous Pro";
-    font-weight: 700;
-    font-size: 26px;
-    color: #121723;
+    font-family: "Anonymous Pro Regular", "Anonymous Pro";
+    font-weight: 400;
+    font-size: 48px;
+}
+.card-title-bottom {
+    font-family: "Anonymous Pro Regular", "Anonymous Pro";
+    font-weight: 400;
+    font-size: 36px;
 }
 .card-info {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    width: 100%;
-    gap: 10px;
-    margin: 0;
-    background: #ffffff;
-    min-height: 76px;
-    font: "Anonymous Pro";
-    padding: 20px;
+    flex-grow: 1;
+    gap: 32px;
+    flex-direction: row;
 }
-.card-info a{
-    text-decoration: none;
+.card-info-text {
+    font-family: "Anonymous Pro Regular", "Anonymous Pro";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 20px;
     color: #121723;
+}
+.card-table {
+    font-family: "Anonymous Pro Regular", "Anonymous Pro";
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 30px;
+    color: #121723;
+    gap: 24px;
+}
+.card-table tr {
+    display: block;
+    border-bottom: 1px solid black;
 }
 .footer {
     display: flex;
